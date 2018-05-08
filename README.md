@@ -19,7 +19,7 @@ https://github.com/TulipCharts/tulipnode
 ```bash
 npm install node-binance-api
 npm install tulind
-npm install shalk
+npm install chalk
 wget https://raw.githubusercontent.com/ManuCart/Binance-Bot/master/bot.js
 node bot.js
 ```
