@@ -17,9 +17,14 @@ https://github.com/TulipCharts/tulipnode
 ### Installation
 
 ```bash
-npm install node-binance-api
-npm install tulind
+sudo apt-get install redis
+
 npm install chalk
+npm install moment
+npm install node-binance-api
+npm install redis
+npm install tulind
+
 wget https://raw.githubusercontent.com/ManuCart/Binance-Bot/master/bot.js
 node bot.js
 ```
