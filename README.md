@@ -1,23 +1,18 @@
 # Binance-Bot
 Another bot for Binance with the fewer code possible, for an automatic buying and selling based on MACD, RSI and Stochastic indicators
 
-This is work in progress
-
-At this time, the Binance-Bot not work
-
-### Introduction
-This bot is written in nodejs
-
-It uses these libraries :
-
-https://github.com/jaggedsoft/node-binance-api
-
-https://github.com/TulipCharts/tulipnode
-
 ### Installation
 
 ```bash
 sudo apt-get install redis
+sudo mcedit /etc/redis/redis.conf 
+
+| #save 900 1
+| #save 300 10
+| #save 60 10000
+
+sudo rm /var/lib/redis/dumb.db
+sudo /etc/init.d/redis-server restart
 
 npm install chalk
 npm install moment
