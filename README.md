@@ -5,6 +5,9 @@ Another bot for Binance with the fewer code possible, for an automatic buying an
 
 ```bash
 sudo apt-get install redis
+
+sudo /etc/init.d/redis-server stop
+redis-cli flushall
 sudo mcedit /etc/redis/redis.conf 
 
 | #save 900 1
@@ -12,7 +15,7 @@ sudo mcedit /etc/redis/redis.conf
 | #save 60 10000
 
 sudo rm /var/lib/redis/dumb.db
-sudo /etc/init.d/redis-server restart
+sudo /etc/init.d/redis-server start
 
 npm install chalk
 npm install moment
