@@ -6,8 +6,8 @@ Another bot for Binance with the fewer code possible, for an automatic buying an
 ```bash
 sudo apt-get install redis
 
-sudo /etc/init.d/redis-server stop
 redis-cli flushall
+sudo /etc/init.d/redis-server stop
 sudo mcedit /etc/redis/redis.conf 
 
 | #save 900 1
