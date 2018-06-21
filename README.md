@@ -16,9 +16,9 @@ sudo mcedit /etc/redis/redis.conf
 
 sudo rm /var/lib/redis/dumb.db
 sudo /etc/init.d/redis-server start
-````
+```
 #### node-js
-````
+```bash
 npm install chalk
 npm install moment
 npm install node-binance-api
