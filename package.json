@@ -1,0 +1,23 @@
+{
+  "name": "binance-bot",
+  "version": "0.0.3",
+  "description": "Another bot for Binance",
+  "private": true,
+  "main": "bot.js",
+  "dependencies": {
+    "binance-api-node": "latest",
+    "chalk": "latest",
+    "fs": "latest",
+    "moment": "latest",
+    "msgpack-lite": "latest",
+    "node-telegram-bot-api": "latest",
+    "redis": "latest",
+    "tulind": "latest",
+    "util": "latest"
+  },
+  "scripts": {
+    "bot": "node bot.js"
+  },
+  "author": "emmett",
+  "license": "MIT"
+  }
