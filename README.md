@@ -3,9 +3,9 @@ Another bot for Binance with the fewer code possible, for an automatic buying an
 
 ### Installation
 #### redis-server
+https://redis.io/
 ```bash
 sudo apt-get install redis
-
 redis-cli flushall
 sudo /etc/init.d/redis-server stop
 sudo mcedit /etc/redis/redis.conf 
@@ -18,12 +18,16 @@ sudo rm /var/lib/redis/dumb.db
 sudo /etc/init.d/redis-server start
 ```
 #### node-js
+https://nodejs.org
 ```bash
-npm install chalk
-npm install moment
-npm install node-binance-api
-npm install redis
-npm install tulind
+sudo apt-get install build-essential
+wget https://nodejs.org/dist/latest-v10.x/node-v10.5.0-linux-armv7l.tar.gz
+sudo tar -xvf node-v10.5.0-linux-armv7l.tar.gz --strip 1 -C /usr/local
+rm node-v10.5.0-linux-armv7l.tar.gz
+mkdir bot
+wget https://raw.githubusercontent.com/ManuCart/Binance-Bot/master/package.json
+node install
+node bot.js
 ```
 
 ### License
