@@ -5,7 +5,8 @@ Another bot for Binance with the fewer code possible, for an automatic buying an
 #### redis-server
 https://redis.io/
 ```bash
-sudo apt-get install redis
+sudo apt-get update
+sudo apt-get install redis-server
 redis-cli flushall
 sudo /etc/init.d/redis-server stop
 sudo mcedit /etc/redis/redis.conf 
