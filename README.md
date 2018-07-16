@@ -28,7 +28,7 @@ rm node-v10.6.0-linux-armv7l.tar.gz
 mkdir bot
 cd bot
 wget https://raw.githubusercontent.com/ManuCart/Binance-Bot/master/package.json
-npm install package.json
+npm install
 node bot.js
 ```
 
