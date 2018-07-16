@@ -32,6 +32,15 @@ npm install package.json
 node bot.js
 ```
 
+#### bot.js
+````
+sudo mkdir /media/card
+sudo mount /dev/sdb1 /media/card
+cp /media/card/bot.js ~/bot/bot.js
+cp /media/card/bot.json ~/bot/bot.json
+cd ~/bot && node bot.js
+````
+
 ### License
 
 MIT License
