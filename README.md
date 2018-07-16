@@ -38,6 +38,7 @@ sudo mkdir /media/card
 sudo mount /dev/sda1 /media/card
 cp /media/card/bot.js ~/bot/bot.js
 cp /media/card/bot.json ~/bot/bot.json
+sudo umount /media/card
 cd ~/bot && node bot.js
 ````
 
