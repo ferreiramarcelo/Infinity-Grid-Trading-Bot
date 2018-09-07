@@ -2,6 +2,13 @@
 Another bot for Binance with the fewer code possible, for an automatic buying and selling based on MACD, RSI and Stochastic indicators
 
 ### Installation
+
+#### configuration
+```bash
+sudo mcedit /usr/share/mc/syntax/js.syntax
+```
+insert ````context exclusive //!! \n white red```` just after ````# Comments````
+
 #### redis-server
 https://redis.io/
 ```bash
