@@ -7,11 +7,13 @@
   "dependencies": {
     "binance-api-node": "latest",
     "chalk": "latest",
+    "colorette": "latest",
     "fs": "latest",
     "moment": "latest",
     "msgpack-lite": "latest",
     "node-telegram-bot-api": "latest",
     "redis": "latest",
+    "telegraf": "latest",
     "tulind": "latest",
     "util": "latest"
   },
