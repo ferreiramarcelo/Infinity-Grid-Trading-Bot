@@ -7,7 +7,7 @@ Another bot for Binance with the fewer code possible, for an automatic buying an
 ```bash
 sudo mcedit /usr/share/mc/syntax/js.syntax
 ```
-insert ````context exclusive //!! \n white red```` just after ````# Comments````
+insert ````context exclusive //! \n white red```` just after ````# Comments````
 
 #### redis-server
 https://redis.io/
