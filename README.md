@@ -29,9 +29,9 @@ sudo /etc/init.d/redis-server start
 https://nodejs.org
 ```bash
 sudo apt-get -y install build-essential
-wget https://nodejs.org/dist/v10.7.0/node-v10.7.0-linux-armv7l.tar.gz
-sudo tar -xvf node-v10.7.0-linux-armv7l.tar.gz --strip 1 -C /usr/local
-rm node-v10.7.0-linux-armv7l.tar.gz
+wget https://nodejs.org/dist/v10.7.0/node-v10.10.0-linux-armv7l.tar.gz
+sudo tar -xvf node-v10.10.0-linux-armv7l.tar.gz --strip 1 -C /usr/local
+rm node-v10.10.0-linux-armv7l.tar.gz
 mkdir ~/bot
 cd ~/bot
 wget https://raw.githubusercontent.com/ManuCart/Binance-Bot/master/package.json
