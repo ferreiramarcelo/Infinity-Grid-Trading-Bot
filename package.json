@@ -1,13 +1,15 @@
 {
   "name": "binance-bot",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Another bot for Binance",
   "private": true,
   "main": "bot.js",
   "dependencies": {
     "binance-api-node": "latest",
     "colorette": "latest",
+    "dropbox": "latest",
     "fs": "latest",
+    "isomorphic-fetch": "latest",
     "moment": "latest",
     "msgpack-lite": "latest",
     "redis": "latest",
