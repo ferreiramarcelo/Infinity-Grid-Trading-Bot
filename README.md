@@ -39,6 +39,16 @@ npm install
 node bot.js
 ```
 
+#### backup key
+#sudo fdisk -l
+sudo mkfs.ext4 /dev/sda1
+sudo mkdir /media/bot
+sudo mount /dev/sda1 /media/bot
+
+sudo blkid /dev/sda1
+sudo mcedit /etc/fstab
+PARTUUID=ABCDEFGH-01 /media/bot ext4 defaults 0 0 
+
 #### bot.js
 ````
 sudo mkdir /media/card
