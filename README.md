@@ -18,6 +18,7 @@ redis-cli flushall
 sudo /etc/init.d/redis-server stop
 sudo mcedit /etc/redis/redis.conf 
 
+| databases 1
 | #save 900 1
 | #save 300 10
 | #save 60 10000
