@@ -46,6 +46,7 @@ node bot.js
 sudo mkfs.ext4 /dev/sda1
 sudo mkdir /media/bot
 sudo mount /dev/sda1 /media/bot
+sudo chown -R $USER:$USER /media/bot
 
 sudo blkid /dev/sda1
 sudo mcedit /etc/fstab
