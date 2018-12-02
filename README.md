@@ -13,6 +13,14 @@ insert ````context exclusive //! \n white red```` just after ````# Comments````
 https://redis.io/
 ```bash
 sudo apt-get -y update
+sudo apt-get install build-essential tcl
+wget http://download.redis.io/releases/redis-stable.tar.gz
+tar xzf redis-stable.tar.gz
+cd redis-stable
+make
+make test
+sudo make install
+
 sudo apt-get -y install redis-server
 redis-cli flushall
 sudo /etc/init.d/redis-server stop
