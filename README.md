@@ -22,19 +22,17 @@ make test
 sudo cp src/redis-server /usr/bin/
 sudo cp src/redis-cli /usr/bin/
 
-
-sudo apt-get -y install redis-server
-redis-cli flushall
-sudo /etc/init.d/redis-server stop
-sudo mcedit /etc/redis/redis.conf 
+sudo mkdir /etc/redis
+sudo mkdir /var/redis
+sudo cp redis.conf /etc/redis/redis.conf
+sudo mcedit /etc/redis/redis.conf
 
 | databases 1
 | #save 900 1
 | #save 300 10
 | #save 60 10000
 
-sudo rm /var/lib/redis/dumb.db
-sudo /etc/init.d/redis-server start
+redis-server /etc/redis/redis.conf
 ```
 #### node-js
 https://nodejs.org
