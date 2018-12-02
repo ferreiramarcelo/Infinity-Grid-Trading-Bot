@@ -19,7 +19,9 @@ tar xzf redis-stable.tar.gz
 cd redis-stable
 make
 make test
-sudo make install
+sudo cp src/redis-server /usr/bin/
+sudo cp src/redis-cli /usr/bin/
+
 
 sudo apt-get -y install redis-server
 redis-cli flushall
