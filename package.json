@@ -1,6 +1,6 @@
 {
   "name": "binance-bot",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Another bot for Binance",
   "private": true,
   "main": "bot.js",
@@ -11,6 +11,7 @@
     "fs": "latest",
     "isomorphic-fetch": "latest",
     "moment": "latest",
+    "node-schedule": "latest",
     "redis": "latest",
     "telegraf": "latest",
     "tulind": "latest",
