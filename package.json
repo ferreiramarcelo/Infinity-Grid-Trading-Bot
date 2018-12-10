@@ -7,6 +7,7 @@
   "dependencies": {
     "binance-api-node": "latest",
     "colorette": "latest",
+    "dotenv": "latest",
     "dropbox": "latest",
     "fs": "latest",
     "isomorphic-fetch": "latest",
