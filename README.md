@@ -1,5 +1,5 @@
 # Binance-Bot
-Another bot for Binance with the fewer code as possible, for an automatic buying and selling based on MACD, RSI and Stochastic indicators
+Another bot for Binance with the fewer code as possible, for an automatic buying and selling based on ATR and RSI indicators.
 
 ### Installation
 
