@@ -6,6 +6,7 @@
   "main": "bot.js",
   "dependencies": {
     "binance-api-node": "latest",
+    "bluebird": "latest",
     "colorette": "latest",
     "dotenv": "latest",
     "dropbox": "latest",
