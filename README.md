@@ -3,11 +3,17 @@ Another bot for Binance with the fewer code as possible, for an automatic buying
 
 ### Installation
 
-#### configuration
+#### midnight-commander
 ```bash
 sudo mcedit /usr/share/mc/syntax/js.syntax
 ```
 insert ````context exclusive //! \n white red```` just after ````# Comments````
+
+Menu (F9) ›  Command ›  Edit Extension File › 
+````# log
+shell/i/.log
+  View=/usr/bin/less -R %f
+````
 
 #### redis-server
 https://redis.io/
