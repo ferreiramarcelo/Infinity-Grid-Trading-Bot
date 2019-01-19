@@ -19,7 +19,7 @@ shell/i/.log
 https://redis.io/
 ```bash
 sudo apt-get -y update
-sudo apt-get install build-essential tcl
+sudo apt-get -y install build-essential tcl
 wget http://download.redis.io/releases/redis-stable.tar.gz
 tar xzf redis-stable.tar.gz
 cd redis-stable
@@ -38,13 +38,17 @@ sudo mcedit /etc/redis/redis.conf
 | #save 300 10
 | #save 60 10000
 
-redis-server /etc/redis/redis.conf
+cd ~/
+rm redis-stable.tar.gz
+rm -rf ~/redis-stable
+/usr/bin/redis-server /etc/redis/redis.conf
 ```
 #### node-js
 https://nodejs.org
 ```bash
+VERSION=11.7.0
 sudo apt-get -y install build-essential
-wget https://nodejs.org/dist/v11.6.0/node-v11.6.0-linux-armv7l.tar.gz -O node.tar.gz
+wget https://nodejs.org/dist/v$VERSION/node-v$VERSION-linux-armv7l.tar.gz -O node.tar.gz
 sudo tar -xvf node.tar.gz --strip 1 -C /usr/local
 rm node.tar.gz
 mkdir ~/bot
