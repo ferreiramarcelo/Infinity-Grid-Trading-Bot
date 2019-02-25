@@ -11,7 +11,7 @@ sudo mcedit /etc/resolv.conf.head
 nameserver 1.1.1.1
 nameserver 1.0.0.1
 ```
-````bash
+```bash
 sudo resolvconf -u
 ```
 
