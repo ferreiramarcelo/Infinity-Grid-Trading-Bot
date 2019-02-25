@@ -3,11 +3,16 @@ Another bot for Binance with the fewer code as possible, for an automatic buying
 
 ### Installation
 
-#### /etc/hosts
+#### resolvconf
 ```bash
-nslookup api.binance.com
-sudo mcedit /etc/hosts
-13.249.14.186	api.binance.com
+sudo mcedit /etc/resolv.conf.head
+```
+```
+nameserver 1.1.1.1
+nameserver 1.0.0.1
+```
+````bash
+sudo resolvconf -u
 ```
 
 #### midnight-commander
