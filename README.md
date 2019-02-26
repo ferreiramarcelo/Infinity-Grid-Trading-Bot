@@ -8,7 +8,7 @@ Another bot for Binance with the fewer code as possible, for an automatic buying
 sudo mcedit /etc/resolv.conf.head
 ```
 ```
-#Cloudflare nameservers
+# Cloudflare nameservers
 nameserver 1.1.1.1
 nameserver 1.0.0.1
 # Google nameservers
