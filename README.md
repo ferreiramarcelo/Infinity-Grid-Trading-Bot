@@ -35,33 +35,6 @@ shell/i/.log
   View=/usr/bin/less -R %f
 ````
 
-#### redis-server
-https://redis.io/
-```bash
-sudo apt-get -y update
-sudo apt-get -y install build-essential tcl
-wget http://download.redis.io/releases/redis-stable.tar.gz
-tar xzf redis-stable.tar.gz
-cd redis-stable
-make
-sudo cp src/redis-server /usr/bin/
-sudo cp src/redis-cli /usr/bin/
-
-sudo mkdir /etc/redis
-sudo mkdir /var/redis
-sudo cp redis.conf /etc/redis/redis.conf
-sudo mcedit /etc/redis/redis.conf
-
-| databases 1
-| #save 900 1
-| #save 300 10
-| #save 60 10000
-
-cd ~/
-rm redis-stable.tar.gz
-rm -rf ~/redis-stable
-/usr/bin/redis-server /etc/redis/redis.conf
-```
 #### node-js
 https://nodejs.org
 ```bash
