@@ -32,7 +32,7 @@ insert ````context exclusive //! \n white red```` just after ````# Comments````
 Menu (F9) ›  Command ›  Edit Extension File › 
 ````# log
 shell/i/.log
-  View=/usr/bin/less -R %f
+  View=/usr/bin/less -N -R %f
 ````
 
 #### node-js
