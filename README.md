@@ -38,7 +38,7 @@ shell/i/.log
 #### node-js
 https://nodejs.org
 ```bash
-VERSION=11.7.0
+VERSION=11.12.0
 sudo apt-get -y install build-essential
 wget https://nodejs.org/dist/v$VERSION/node-v$VERSION-linux-armv7l.tar.gz -O node.tar.gz
 sudo tar -xvf node.tar.gz --strip 1 -C /usr/local
@@ -48,6 +48,12 @@ cd ~/bot
 wget https://raw.githubusercontent.com/ManuCart/Binance-Bot/master/package.json
 npm install
 node bot.js
+```
+#### node-js
+```
+npm install eslint --save-dev
+./node_modules/.bin/eslint --init
+./node_modules/.bin/eslint ./bot/bot6.js
 ```
 
 #### backup key
