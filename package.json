@@ -5,7 +5,9 @@
   "private": true,
   "main": "bot.js",
   "dependencies": {
+    "ansi-to-html": "matest",
     "binance-api-node": "latest",
+    "coinmarketcap-api": "latet",
     "colorette": "latest",
     "dotenv": "latest",
     "dropbox": "latest",
