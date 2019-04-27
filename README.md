@@ -55,6 +55,12 @@ npm install eslint --save-dev
 ./node_modules/.bin/eslint --init
 ./node_modules/.bin/eslint ./bot/bot6.js
 ```
+#### eslint
+```
+npm install eslint --save-dev
+./node_modules/.bin/eslint --init
+./node_modules/.bin/eslint bot6.js
+```
 
 #### backup key
 ````
