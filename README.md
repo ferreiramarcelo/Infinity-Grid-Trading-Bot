@@ -18,9 +18,9 @@ sudo apt-get install dnsmasq dnsutils
 
 sudo mcedit /etc/dhcpcd.conf
 | interface eth0
-| static ip_address=192.168.0.1/24
-| static routers=192.168.0.254
-| static domain_name_servers=192.168.0.1 8.8.8.8
+|   static ip_address=192.168.0.1/24
+|   static routers=192.168.0.254
+|   static domain_name_servers=127.0.0.1 8.8.8.8
 
 sudo /etc/init.d/networking restart
 
