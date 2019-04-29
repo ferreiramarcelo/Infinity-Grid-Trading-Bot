@@ -25,9 +25,10 @@ sudo mcedit /etc/dhcpcd.conf
 sudo /etc/init.d/networking restart
 
 /etc/init.d/dnsmasq status
+
+dig api.binance.com
+dig @1.1.1.1 api.binance.com +short
 ````
-
-
 
 #### midnight-commander
 ```bash
