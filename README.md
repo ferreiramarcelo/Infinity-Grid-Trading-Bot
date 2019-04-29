@@ -5,23 +5,29 @@ Another bot for Binance with the fewer code as possible, for an automatic buying
 
 #### resolvconf
 ```bash
-sudo mcedit /etc/resolv.conf.head
-```
-```
-options use-vc
-# Cloudflare nameservers
-#nameserver 1.1.1.1
-#nameserver 1.0.0.1
-# Google nameservers
-nameserver 8.8.8.8
-nameserver 8.8.4.4
-# OpenDNS nameservers
-#nameserver 208.67.222.222
-#nameserver 208.67.220.220
-```
-```bash
-sudo resolvconf -u
-```
+sudo apt install resolvconf
+sudo dpkg-reconfigure resolvconf
+
+| Prepare /etc/resolv.conf for dynamic updates?
+| No
+
+sudo mcedit /etc/resolv.conf
+| nameserver 127.0.0.1
+
+sudo apt-get install dnsmasq dnsutils
+
+sudo mcedit /etc/dhcpcd.conf
+| interface eth0
+| static ip_address=192.168.0.1/24
+| static routers=192.168.0.254
+| static domain_name_servers=192.168.0.1 8.8.8.8
+
+sudo /etc/init.d/networking restart
+
+/etc/init.d/dnsmasq status
+````
+
+
 
 #### midnight-commander
 ```bash
