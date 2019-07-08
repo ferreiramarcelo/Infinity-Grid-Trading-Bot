@@ -157,6 +157,9 @@ colorscheme palenight
 
 set mouse=a
 autocmd VimEnter * nested :call tagbar#autoopen(1)
+
+map <F2> :w<CR>
+map <F10> :q<CR>
 ```
 
 ```
