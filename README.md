@@ -92,6 +92,121 @@ sudo umount /media/card
 cd ~/bot && node bot.js
 ````
 
+## Tools
+
+### tmux
+https://github.com/tmux/tmux
+```bash
+clear
+tmux -V
+tmux kill-server
+sudo apt-get install -y libevent-dev libncurses5-dev
+wget https://github.com/tmux/tmux/releases/download/2.8/tmux-2.8.tar.gz
+tar xvfz tmux-2.8.tar.gz
+cd tmux-2.8
+./configure && make
+sudo cp ./tmux /usr/bin/tmux
+tmux -V
+cd ..
+rm tmux-2.8.tar.gz
+rm -rf tmux-2.8
+```
+
+### nvim
+https://github.com/neovim/neovim
+```bash
+sudo apt-get install -y git libtool libtool-bin autoconf automake cmake g++ pkg-config unzip libffi-dev
+git clone https://github.com/neovim/neovim.git
+cd neovim
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+```
+#### plugins
+nvim ~/.tern-config
+```bash
+{
+  "plugins":
+  {
+    "node": {}
+  }
+}
+```
+```bash
+mkdir ~/.config/nvim
+nvim ~/.config/nvim/init.vim
+```
+
+```bash
+set number
+
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall
+endif
+
+call plug#begin()
+    Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
+    Plug 'drewtempelmeyer/palenight.vim'
+    Plug 'majutsushi/tagbar'
+call plug#end()
+
+set background=dark
+colorscheme palenight
+```
+Useful commands
+````:TagbarOpen````
+````:PlugInstall````
+````:CheckHealth````
+
+#### ctags
+https://github.com/universal-ctags/ctags
+```bash
+git clone https://github.com/universal-ctags/ctags.git
+cd ctags
+./autogen.sh 
+./configure
+make
+sudo make install
+ctags -R
+```
+
+### mc
+https://github.com/MidnightCommander/mc
+```bash
+clear
+sudo apt-gen install autogen autoconf libtool gettext libslang2-dev
+wget https://github.com/MidnightCommander/mc/archive/4.8.20.tar.gz
+tar xvfz 4.8.20.tar.gz
+cd mc-4.8.20
+autoconf
+./configure
+make
+make install
+
+nvim .config/mc/mc.ext
+shell/i/.log
+        Open=/usr/bin/less -N -R %f
+shell/i/.js
+        Open=/usr/local/bin/nvim %f
+shell/i/.json
+        Open=/usr/local/bin/nvim %f
+shell/i/.yml
+        Open=/usr/local/bin/nvim %f
+```
+
+### ttyd
+https://github.com/tsl0922/ttyd
+```bash
+sudo apt-get install cmake g++ pkg-config git vim-common libwebsockets-dev libjson-c-dev libssl-dev
+git clone https://github.com/tsl0922/ttyd.git
+cd ttyd && mkdir build && cd build
+cmake ..
+make && make install
+
+ttyd -p 8080 bash -x
+```
+
 ### License
 
 MIT License
