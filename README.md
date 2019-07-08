@@ -162,9 +162,15 @@ neovim
 ```
 
 Useful commands
-````:TagbarOpen````
-````:PlugInstall````
-````:CheckHealth````
+````
+:TagbarOpen
+:set mouse=a
+:PlugInstall
+:CheckHealth
+:set wrap
+:set nowrap
+:AnsiEsc
+````
 
 #### ctags
 https://github.com/universal-ctags/ctags
