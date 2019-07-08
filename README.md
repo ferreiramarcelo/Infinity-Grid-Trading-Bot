@@ -149,11 +149,18 @@ call plug#begin()
     Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
     Plug 'drewtempelmeyer/palenight.vim'
     Plug 'majutsushi/tagbar'
+    Plug 'https://github.com/powerman/vim-plugin-AnsiEsc'
 call plug#end()
 
 set background=dark
 colorscheme palenight
 ```
+
+```
+neovim
+:PlugInstall
+```
+
 Useful commands
 ````:TagbarOpen````
 ````:PlugInstall````
