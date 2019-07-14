@@ -42,8 +42,26 @@ shell/i/.log
   View=/usr/bin/less -N -R %f
 ````
 
+
+
 #### node-js
 https://nodejs.org
+
+### Dependencies :
+ * binance-api-node  : https://github.com/Ashlar/binance-api-node
+ * coinmarketcap-api : https://github.com/tiaanduplessis/coinmarketcap-api
+ * dropbox           : https://github.com/dropbox/dropbox-sdk-js
+ * fs                :           
+ * isomorphic-fetch  : https://github.com/matthew-andrews/isomorphic-fetch
+ * moment            : https://github.com/moment/moment
+ * nanoid            : https://github.com/ai/nanoid
+ * node-schedule     : https://github.com/node-schedule/node-schedule
+ * telegraf          : https://github.com/telegraf/telegraf
+ * tulind            : https://github.com/TulipCharts/tulipnode
+ * util              :
+
+### Installation :
+
 ```bash
 VERSION=11.13.0
 sudo apt-get -y install build-essential
@@ -56,17 +74,12 @@ wget https://raw.githubusercontent.com/ManuCart/Binance-Bot/master/package.json
 npm install
 node bot.js
 ```
-#### node-js
-```
-npm install eslint --save-dev
-./node_modules/.bin/eslint --init
-./node_modules/.bin/eslint ./bot/bot6.js
-```
+
 #### eslint
 ```
 npm install eslint --save-dev
 ./node_modules/.bin/eslint --init
-./node_modules/.bin/eslint bot6.js
+./node_modules/.bin/eslint ./bot/bot6.js
 ```
 
 #### backup key
