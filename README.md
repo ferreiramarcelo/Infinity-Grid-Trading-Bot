@@ -4,7 +4,7 @@ Another bot for Binance with the fewer code as possible, for an automatic buying
 ### Installation
 
 #### Create User
-````
+```bash
 sudo adduser bot
 sudo adduser bot sudo
 sudo adduser bot adm
@@ -16,6 +16,7 @@ sudo apt-get update
 sudo deluser pi sudo
 sudo deluser pi adm
 sudo deluser -remove-home pi
+```
 
 #### resolvconf
 ```bash
