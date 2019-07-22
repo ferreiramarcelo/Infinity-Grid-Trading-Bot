@@ -63,7 +63,7 @@ https://nodejs.org
 ### Installation :
 
 ```bash
-VERSION=11.13.0
+VERSION=12.6.0
 sudo apt-get -y install build-essential
 wget https://nodejs.org/dist/v$VERSION/node-v$VERSION-linux-armv7l.tar.gz -O node.tar.gz
 sudo tar -xvf node.tar.gz --strip 1 -C /usr/local
