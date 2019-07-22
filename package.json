@@ -6,7 +6,7 @@
   "main": "bot.js",
   "dependencies": {
     "binance-api-node": "latest",
-    "coinmarketcap-api": "latet",
+    "coinmarketcap-api": "latest",
     "dropbox": "latest",
     "fs": "latest",
     "isomorphic-fetch": "latest",
