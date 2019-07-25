@@ -9,6 +9,7 @@
     "coinmarketcap-api": "latest",
     "dropbox": "latest",
     "fs": "latest",
+    "js-yaml": "latest",
     "isomorphic-fetch": "latest",
     "moment": "latest",
     "nanoid": "latest",
