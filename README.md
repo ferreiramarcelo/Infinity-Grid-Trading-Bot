@@ -119,6 +119,11 @@ cp /media/card/bot.json ~/bot/bot.json
 sudo umount /media/card
 cd ~/bot && node bot.js
 ````
+#### Uninstall
+```
+sudo rm -rf /usr/local/{lib/node{,/.npm,_modules},bin,share/man}/{npm*,node*,man1/node*}
+```
+
 
 ## Tools
 
