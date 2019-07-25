@@ -68,6 +68,7 @@ https://nodejs.org
  * dropbox           : https://github.com/dropbox/dropbox-sdk-js
  * fs                :           
  * isomorphic-fetch  : https://github.com/matthew-andrews/isomorphic-fetch
+ * js_yaml           : https://github.com/nodeca/js-yaml
  * moment            : https://github.com/moment/moment
  * nanoid            : https://github.com/ai/nanoid
  * node-schedule     : https://github.com/node-schedule/node-schedule
