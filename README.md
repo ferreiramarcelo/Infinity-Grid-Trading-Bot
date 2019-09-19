@@ -63,18 +63,21 @@ shell/i/.log
 https://nodejs.org
 
 ### Dependencies :
- * binance-api-node  : https://github.com/Ashlar/binance-api-node
- * coinmarketcap-api : https://github.com/tiaanduplessis/coinmarketcap-api
- * dropbox           : https://github.com/dropbox/dropbox-sdk-js
- * fs                :           
- * isomorphic-fetch  : https://github.com/matthew-andrews/isomorphic-fetch
- * js_yaml           : https://github.com/nodeca/js-yaml
- * moment            : https://github.com/moment/moment
- * nanoid            : https://github.com/ai/nanoid
- * node-schedule     : https://github.com/node-schedule/node-schedule
- * telegraf          : https://github.com/telegraf/telegraf
- * tulind            : https://github.com/TulipCharts/tulipnode
- * util              :
+ * binance-api-node   : https://github.com/Ashlar/binance-api-node
+ * bignumber.js       : https://github.com/MikeMcl/bignumber.js
+ * ccxt               : https://github.com/ccxt/ccxt
+ * coinmarketcap-api  : https://github.com/tiaanduplessis/coinmarketcap-api
+ * dropbox            : https://github.com/dropbox/dropbox-sdk-js
+ * fs                 :           
+ * google-spreadsheet : https://github.com/theoephraim/node-google-spreadsheet
+ * isomorphic-fetch   : https://github.com/matthew-andrews/isomorphic-fetch
+ * js_yaml            : https://github.com/nodeca/js-yaml
+ * moment             : https://github.com/moment/moment
+ * nanoid             : https://github.com/ai/nanoid
+ * node-schedule      : https://github.com/node-schedule/node-schedule
+ * telegraf           : https://github.com/telegraf/telegraf
+ * tulind             : https://github.com/TulipCharts/tulipnode
+ * util               :
 
 ### Installation :
 
