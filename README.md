@@ -1,8 +1,41 @@
 # Infinity-Grid-Trading-Bot
-Infinity grid trading bot for Binance, Kucoin & OKEx with the fewer code as possible, based on ATR and RSI signals with ADX filter.
+Infinity grid trading bot for Binance, Kucoin & OKEx with the fewer code as possible, based on ATR and RSI signals with ADX filter
 
-### Installation
+## Prerequisite
+#### Download and Install Node.js
+Go to [nodejs.org](https://nodejs.org/en/download/current/) to download and install latest current version
+````
+VERSION=13.0.1
+sudo apt-get -y install build-essential
+wget https://nodejs.org/dist/v$VERSION/node-v$VERSION-linux-armv7l.tar.gz -O node.tar.gz
+sudo tar -xvf node.tar.gz --strip 1 -C /usr/local
+rm node.tar.gz
+````
 
+## Installation & Execution
+#### Dependencies :
+ * binance-api-node   : https://github.com/Ashlar/binance-api-node
+ * bignumber.js       : https://github.com/MikeMcl/bignumber.js
+ * ccxt               : https://github.com/ccxt/ccxt
+ * coinmarketcap-api  : https://github.com/tiaanduplessis/coinmarketcap-api
+ * dropbox            : https://github.com/dropbox/dropbox-sdk-js
+ * fs                 :           
+ * google-spreadsheet : https://github.com/theoephraim/node-google-spreadsheet
+ * isomorphic-fetch   : https://github.com/matthew-andrews/isomorphic-fetch
+ * js_yaml            : https://github.com/nodeca/js-yaml
+ * moment             : https://github.com/moment/moment
+ * nanoid             : https://github.com/ai/nanoid
+ * node-schedule      : https://github.com/node-schedule/node-schedule
+ * telegraf           : https://github.com/telegraf/telegraf
+ * tulind             : https://github.com/TulipCharts/tulipnode
+ * util               :
+#### Downloading and installing dependencies packages locally
+````
+mkdir ~/igtb && cd ~/igtb
+wget https://raw.githubusercontent.com/ManuCart/Infinity-Grid-Trading-Bot/master/package.json
+npm install
+````
+## Optional Developement Tools
 #### Create User
 ```bash
 sudo adduser bot
@@ -17,30 +50,31 @@ sudo deluser pi sudo
 sudo deluser pi adm
 sudo deluser -remove-home pi
 ```
-
-#### resolvconf
+####  Install Domain Name System (DNS) resolver
 ```bash
-sudo apt install resolvconf
+sudo apt-get install resolvconf
 sudo dpkg-reconfigure resolvconf
+```
+Prepare /etc/resolv.conf for dynamic updates? ````No````
 
-| Prepare /etc/resolv.conf for dynamic updates?
-| No
-
+````
 sudo mcedit /etc/resolv.conf
+````
 | nameserver 127.0.0.1
 
+````
 sudo apt-get install dnsmasq dnsutils
-
+````
+````
 sudo mcedit /etc/dhcpcd.conf
 | interface eth0
 |   static ip_address=192.168.0.1/24
 |   static routers=192.168.0.254
 |   static domain_name_servers=127.0.0.1 8.8.8.8
-
+````
+````
 sudo /etc/init.d/networking restart
-
 /etc/init.d/dnsmasq status
-
 dig api.binance.com
 dig @1.1.1.1 api.binance.com +short
 ````
@@ -57,48 +91,11 @@ shell/i/.log
   View=/usr/bin/less -N -R %f
 ````
 
-
-
-#### node-js
-https://nodejs.org
-
-### Dependencies :
- * binance-api-node   : https://github.com/Ashlar/binance-api-node
- * bignumber.js       : https://github.com/MikeMcl/bignumber.js
- * ccxt               : https://github.com/ccxt/ccxt
- * coinmarketcap-api  : https://github.com/tiaanduplessis/coinmarketcap-api
- * dropbox            : https://github.com/dropbox/dropbox-sdk-js
- * fs                 :           
- * google-spreadsheet : https://github.com/theoephraim/node-google-spreadsheet
- * isomorphic-fetch   : https://github.com/matthew-andrews/isomorphic-fetch
- * js_yaml            : https://github.com/nodeca/js-yaml
- * moment             : https://github.com/moment/moment
- * nanoid             : https://github.com/ai/nanoid
- * node-schedule      : https://github.com/node-schedule/node-schedule
- * telegraf           : https://github.com/telegraf/telegraf
- * tulind             : https://github.com/TulipCharts/tulipnode
- * util               :
-
-### Installation :
-
-```bash
-VERSION=10.16.0
-sudo apt-get -y install build-essential
-wget https://nodejs.org/dist/v$VERSION/node-v$VERSION-linux-armv7l.tar.gz -O node.tar.gz
-sudo tar -xvf node.tar.gz --strip 1 -C /usr/local
-rm node.tar.gz
-mkdir ~/bot
-cd ~/bot
-wget https://raw.githubusercontent.com/ManuCart/Binance-Bot/master/package.json
-npm install
-node bot.js
-```
-
-#### eslint
+#### Eslint
 ```
 npm install eslint --save-dev
 ./node_modules/.bin/eslint --init
-./node_modules/.bin/eslint ./bot/bot6.js
+./node_modules/.bin/eslint ./igtb/igtb.js
 ```
 
 #### backup key
@@ -128,10 +125,7 @@ cd ~/bot && node bot.js
 sudo rm -rf /usr/local/{lib/node{,/.npm,_modules},bin,share/man}/{npm*,node*,man1/node*}
 ```
 
-
-## Tools
-
-### tmux
+#### tmux
 https://github.com/tmux/tmux
 ```bash
 clear
@@ -149,7 +143,7 @@ rm tmux-2.8.tar.gz
 rm -rf tmux-2.8
 ```
 
-### nvim
+#### nvim
 https://github.com/neovim/neovim
 ```bash
 sudo apt-get install -y git libtool libtool-bin autoconf automake cmake g++ pkg-config unzip libffi-dev gettext
@@ -227,7 +221,7 @@ sudo make install
 ctags -R
 ```
 
-### mc
+#### mc
 https://github.com/MidnightCommander/mc
 ```bash
 clear
@@ -251,7 +245,7 @@ shell/i/.yml
         Open=/usr/local/bin/nvim %f
 ```
 
-### ttyd
+#### ttyd
 https://github.com/tsl0922/ttyd
 ```bash
 sudo apt-get install cmake g++ pkg-config git vim-common libwebsockets-dev libjson-c-dev libssl-dev
@@ -267,7 +261,7 @@ ttyd -p 8080 bash -x
 
 MIT License
 
-Copyright (c) May 1, 2018 Emmanuel CHARETTE
+Copyright (c) ````May 1, 2018```` ````Emmanuel CHARETTE````
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
