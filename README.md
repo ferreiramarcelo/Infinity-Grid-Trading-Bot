@@ -19,7 +19,7 @@ Creating a new bot with [BotFather](https://telegram.me/botfather)
 * Copy the __token__ to the configuration file ````config.json````
 * Send a dummy message to your new bot
 ````
-curl https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getUpdates | jq .message.chat.id
+curl https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getUpdates | jq .result[0].message.chat.id
 ````
 * Go to following url ````https://api.telegram.org/bot````__token__````/getUpdates````
 * Look for ````"chat":{"id":````
