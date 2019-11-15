@@ -11,6 +11,19 @@ wget https://nodejs.org/dist/v$VERSION/node-v$VERSION-linux-armv7l.tar.gz -O nod
 sudo tar -xvf node.tar.gz --strip 1 -C /usr/local
 rm node.tar.gz
 ````
+#### Telegram Notification
+Creating a new bot with [BotFather](https://telegram.me/botfather)
+* Use the __/newbot__ command to create a new bot. The BotFather will ask you for a name and username, then generate an authorization token for your new bot.
+* The __name__ of your bot is displayed in contact details and elsewhere.
+* The __Username__ is a short name, to be used in mentions and telegram.me links. Usernames are 5-32 characters long and are case insensitive, but may only include Latin characters, numbers, and underscores. Your bot's username must end in ‘bot’.
+* Copy the __token__ to the configuration file ````config.json````
+* Send a dummy message to your new bot
+````
+curl https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getUpdates | jq .message.chat.id
+````
+* Go to following url ````https://api.telegram.org/bot````__token__````/getUpdates````
+* Look for ````"chat":{"id":````
+* Copy the __chatid__ to the configuration file ````config.json````
 
 ## Installation & Execution
 #### Dependencies :
@@ -35,7 +48,7 @@ mkdir ~/igtb && cd ~/igtb
 wget https://raw.githubusercontent.com/ManuCart/Infinity-Grid-Trading-Bot/master/package.json
 npm install
 ````
-## Optional Developement Tools
+## Developement Tools (Optional)
 #### Create User
 ```bash
 sudo adduser bot
