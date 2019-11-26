@@ -184,7 +184,7 @@ autocmd VimEnter * nested :call tagbar#autoopen(1)
 map <F2> :w<CR>
 map <F10> :q<CR>
 ```
-#### ctags
+#### Universal Ctags
 https://github.com/universal-ctags/ctags
 ```bash
 git clone https://github.com/universal-ctags/ctags.git
