@@ -11,6 +11,58 @@ wget https://nodejs.org/dist/v$VERSION/node-v$VERSION-linux-armv7l.tar.gz -O nod
 sudo tar -xvf node.tar.gz --strip 1 -C /usr/local
 rm node.tar.gz
 ````
+#### InfluxDB
+````
+wget https://dl.influxdata.com/influxdb/releases/influxdb_1.7.9_armhf.deb
+sudo dpkg -i influxdb_1.7.9_armhf.deb
+rm influxdb_1.7.9_armhf.deb
+sudo nvim /etc/influxdb/influxdb.conf
+````
+Uncomment next lines
+````
+[http]
+  # Determines whether HTTP endpoint is enabled.
+  enabled = true
+
+  # The bind address used by the HTTP service.
+  bind-address = ":8086"
+
+  # Determines whether user authentication is enabled over HTTP/HTTPS.
+  auth-enabled = false
+````
+Create Binance database
+````
+influx
+CREATE DATABASE binance
+#DROP DATABASE binance
+````
+
+#### Grafana
+````
+wget https://dl.grafana.com/oss/release/grafana_6.5.1_armhf.deb 
+sudo dpkg -i grafana_6.5.1_armhf.deb
+rm grafana_6.5.1_armhf.deb
+sudo nvim /etc/grafana/grafana.ini
+````
+Uncomment next lines
+````
+[server]
+# Protocol (http, https, socket)
+protocol = http
+
+# The ip address to bind to, empty will bind to all interfaces
+;http_addr =
+
+# The http port  to use
+http_port = 3000
+````
+Start grafana server 
+````
+sudo service grafana-server restart
+````
+Login with your admin user (default admin/admin). Open side menu (click the Grafana icon in top menu) head to Data Sources and add Binance data source.
+
+
 #### Telegram Notification
 Creating a new bot with [BotFather](https://telegram.me/botfather)
 * Use the __/newbot__ command to create a new bot. The BotFather will ask you for a name and username, then generate an authorization token for your new bot.
