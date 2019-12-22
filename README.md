@@ -29,6 +29,13 @@ Uncomment next lines
 
   # Determines whether user authentication is enabled over HTTP/HTTPS.
   auth-enabled = false
+
+[meta]
+dir = "/media/key/influxdb"
+
+[data]
+dir = "/media/key/influxdb/data"
+wal-dir = "/media/key/influxdb/wal"
 ````
 Start influxdb database 
 ````
