@@ -30,6 +30,11 @@ Uncomment next lines
   # Determines whether user authentication is enabled over HTTP/HTTPS.
   auth-enabled = false
 ````
+Start influxdb database 
+````
+sudo service influxdb restart
+````
+
 Create Binance database
 ````
 influx
@@ -289,6 +294,19 @@ shell/i/.yml
         Open=/usr/local/bin/nvim %f
 ```
 
+
+### Format Database USB Key
+````
+lsblk
+sudo fdisk /dev/sda
+d,n,p,1,ENTER,ENTER,t,83,w
+sudo mkfs.ext4 /dev/sda1
+sudo mkdir /media/key
+sudo mount /dev/sda1 /media/key
+sudo mkdir /media/key/influxdb
+sudo chown -R influxdb:influxdb /media/key/influxdb
+
+````
 
 ### License
 
