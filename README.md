@@ -164,19 +164,6 @@ npm install eslint --save-dev
 ./node_modules/.bin/eslint ./igtb/igtb.js
 ```
 
-### backup key
-````
-#sudo fdisk -l
-sudo mkfs.ext4 /dev/sda1
-sudo mkdir /media/bot
-sudo mount /dev/sda1 /media/bot
-sudo chown -R $USER:$USER /media/bot
-
-sudo blkid /dev/sda1
-sudo mcedit /etc/fstab
-PARTUUID=ABCDEFGH-01 /media/bot ext4 defaults 0 0 
-````
-
 ### bot.js
 ````
 sudo mkdir /media/card
@@ -294,8 +281,8 @@ shell/i/.yml
         Open=/usr/local/bin/nvim %f
 ```
 
-
-### Format Database USB Key
+## Appendix
+### Format USB Key to store database
 ````
 lsblk
 sudo fdisk /dev/sda
@@ -303,9 +290,12 @@ d,n,p,1,ENTER,ENTER,t,83,w
 sudo mkfs.ext4 /dev/sda1
 sudo mkdir /media/key
 sudo mount /dev/sda1 /media/key
-sudo mkdir /media/key/influxdb
+sudo chown -R $USER:$USER /media/bot
+mkdir /media/key/influxdb
 sudo chown -R influxdb:influxdb /media/key/influxdb
-
+sudo blkid /dev/sda1
+sudo mcedit /etc/fstab
+PARTUUID=ABCDEFGH-01 /media/bot ext4 defaults 0 0 
 ````
 
 ### License
