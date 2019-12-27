@@ -5,7 +5,7 @@ Infinity grid trading bot for Binance with the fewer code as possible, based on 
 #### Download and Install Node.js
 Go to [nodejs.org](https://nodejs.org/en/download/current/) to download and install latest current version
 ````
-VERSION=13.0.1
+VERSION=13.5.0
 sudo apt-get -y install build-essential
 wget https://nodejs.org/dist/v$VERSION/node-v$VERSION-linux-armv7l.tar.gz -O node.tar.gz
 sudo tar -xvf node.tar.gz --strip 1 -C /usr/local
