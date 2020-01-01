@@ -1,5 +1,5 @@
 # Infinity-Grid-Trading-Bot
-Infinity grid trading bot for Binance with the fewer code as possible, based on ATR and RSI signals with ADX filter
+Infinity grid trading bot for Binance with the fewer code as possible, based on ATR and RSI signals
 
 ## Prerequisite
 #### Download and Install Node.js
