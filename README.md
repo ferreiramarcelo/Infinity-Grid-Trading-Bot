@@ -51,9 +51,9 @@ CREATE DATABASE binance
 
 #### Grafana
 ````
-wget https://dl.grafana.com/oss/release/grafana_6.5.1_armhf.deb 
-sudo dpkg -i grafana_6.5.1_armhf.deb
-rm grafana_6.5.1_armhf.deb
+wget https://dl.grafana.com/oss/release/grafana_6.5.2_armhf.deb 
+sudo dpkg -i grafana_6.5.2_armhf.deb
+rm grafana_6.5.2_armhf.deb
 sudo nvim /etc/grafana/grafana.ini
 ````
 Uncomment next lines
