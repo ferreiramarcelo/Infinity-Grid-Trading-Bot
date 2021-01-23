@@ -8,7 +8,7 @@
     "binance-api-node": "latest",
     "coinmarketcap-api": "latest",
     "dropbox": "latest",
-    "fs": "latest",
+    "fs": "0.0.2",
     "isomorphic-fetch": "latest",
     "nanoid": "latest",
     "node-schedule": "latest",
