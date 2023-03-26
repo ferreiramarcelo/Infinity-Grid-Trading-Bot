@@ -10,7 +10,7 @@
     "dropbox": "latest",
     "fs": "0.0.2",
     "isomorphic-fetch": "latest",
-    "nanoid": "latest",
+    "nanoid": "4.0.1",
     "node-schedule": "latest",
     "telegraf": "latest",
     "tulind": "latest",
